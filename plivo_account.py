@@ -10,7 +10,7 @@ p = plivo.RestAPI(auth_id, auth_token)
 response = p.get_account()
 
 
-# Delete aubaccount
+# Delete subaccount
 params = {
         'subauth_id': 'XXXXXXXXXXXXXXXXXX',
         }
