@@ -10,10 +10,9 @@ from flask import Flask, render_template, request, make_response
 
 app = Flask(__name__)
 
-r = plivoxml.Response()
-
 @app.route('/message_url/', methods=['GET', 'POST'])
 def message():
+    r = plivoxml.Response()
     if request.method == 'GET':
         message_content = request.args.items()
         From = request.args['From']
